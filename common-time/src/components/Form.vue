@@ -9,12 +9,19 @@
         <input type="text" id="code" name="code"><br><br>
         <input type="submit" value="Submit">
     </form>   
+
+    <Invitees />
+
   </div>
 </template>
 
 <script>
+import Invitees from  './Invitees.vue'
 export default {
   name: 'Form',
+  components: {
+    Invitees, 
+  },
   props: {
     msg: String
   }
