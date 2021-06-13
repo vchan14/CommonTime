@@ -8,8 +8,8 @@
         </div>
         <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
     </div>
-    <li v-for="invitee in invitees">
-      <span class="id">{{ inviteee.id }}</span>
+    <li v-for="invitee in invitees" v-bind:key='invitee.id'>
+      <span class="id">{{ invitee.id }}</span>
       <span class="email">£{{ product.email }}</span>
     </li>
   </div>
